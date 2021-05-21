@@ -4,6 +4,4 @@
 
 #### TODO
 
-- Delete feature
-
 - Improve style
