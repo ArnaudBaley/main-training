@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo list app</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <h1>
+            todo list app
+        </h1>
+        
+        <p>Create new todo :</p>
+        
+        <!-- Prevent default behaviour with return false -->
+        <form onsubmit="return false;">
+            <input type='text' id='input' value="test">
+            <input type='submit' value="Submit" onclick="create()">
+        </form>
+
+        <div id="todoList">
+            <p>Todo element</p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
