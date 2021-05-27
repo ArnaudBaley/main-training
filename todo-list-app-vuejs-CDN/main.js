@@ -53,7 +53,7 @@ const app = new Vue({
         }
     },
     data: {
-        message: 'todo-list-app-vuejs',
+        message: 'todo-list-app-vuejs-CDN',
         todoList: [],
         index: 0,
     }

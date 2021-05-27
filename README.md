@@ -9,9 +9,9 @@ https://arnaudbaley.github.io/training/todo-list-app-js-vanilla/
 - Improve style
 
 
-## todo-list-app-vuejs
+## todo-list-app-vuejs-CDN
 
-https://arnaudbaley.github.io/training/todo-list-app-vuejs/
+https://arnaudbaley.github.io/training/todo-list-app-vuejs-CDN/
 
 #### TODO
 
