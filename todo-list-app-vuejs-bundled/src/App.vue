@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <h1>{{ message }}</h1>
+
+        <TodoInput @clickedadd="addItemToList"></TodoInput>
+
+        <h3>List :</h3>
+        <TodoItem @clickedremoved="removeItemFromList" v-for="item in todoList"
+         v-bind:todo="item" :key="item.id"></TodoItem>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import TodoInput from './components/TodoInput.vue';
+import TodoItem from './components/TodoItem.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    TodoInput,
+    TodoItem,
+  },
+  data() {
+    return {
+      message: 'todo-list-app-vuejs-bundled',
+      todoList: [],
+      index: 0,
+    };
+  },
+  methods: {
+    addItemToList(item) {
+      const todo = {
+        id: this.index,
+        text: item,
+      };
+      this.todoList.push(todo);
+      this.index += 1;
+    },
+    removeItemFromList(itemToDeleteId) {
+      this.todoList = this.todoList.filter((item) => item.id !== itemToDeleteId);
+    },
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
