@@ -21,7 +21,3 @@
 ## todo-list-app-vuejs-bundled
 
 https://github.com/ArnaudBaley/training/tree/main/todo-list-app-vuejs-bundled
-
-#### TODO
-
-- [MIGRATION] Migrate 'todo-list-app-vuejs-CDN' to 'todo-list-app-vuejs-bundled'.
